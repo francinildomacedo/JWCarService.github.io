@@ -1,0 +1,11 @@
+// Captura o formulário de diagnóstico
+const diagnosticoForm = document.getElementById('diagnostico-form');
+
+// Adiciona um listener para o envio do formulário
+diagnosticoForm.addEventListener('submit', function (event) {
+  event.preventDefault(); // Previne o comportamento padrão
+
+  // Exibe uma mensagem de sucesso
+  alert('Diagnóstico solicitado com sucesso!');
+  diagnosticoForm.reset(); // Limpa o formulário
+});
